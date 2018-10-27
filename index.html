@@ -6,29 +6,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<meta name="google-site-verification" content="0-yV-mRZ-3z7djYLoEsQSPYfJ1vCEkoSjwmirbVQaRQ" />
 <style>
-    html {
-        line-height: 1.4em;
-        font-size: 0.9em;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-        font-weight: normal;
-        color: rgba(0, 0, 0, 0.9);
-        max-width: 1000px; 
-	padding: 10px; 
-	margin: auto;
-       }
-	h1, h2, h3, nav { color: #001F5B; }
-	nav a { display: inline-block; padding: 4px; }
-	header img { border: 1px solid #aaa; margin-bottom: 15px;}
-	header table { margin: 0 auto 15px;  }
+    	html {
+          line-height: 1.4em;
+          font-size: 0.9em;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+          font-weight: normal;
+          color: rgba(0, 0, 0 0.9);
+          max-width: 1000px; 
+ 	  padding: 10px; 
+	  margin: auto;
+ 	  background: #FFFFFF;
+	  overflow-x: hidden; 
+        }
+	h1, h2, h3, nav { color: #001F5B; text-transform: uppercase; font-weight: 600; line-height: 1.4em; }
+	nav {   
+		position: sticky; 
+		top: 0; 
+		background: #FFFFFF; 
+		border-bottom: 1px solid #444; 
+		margin: 30px -20px;
+		padding: 2px 20px;
+		font-weight: 700;
+	}
+	nav a { display: inline-block; padding: 4px; text-decoration: none; }
+	a:active, a:hover { color: red; }
 	footer { text-align: right; margin: auto auto 30px;}
-	address, nav, footer { font-size: 0.95em; } 
+	address, nav, footer { font-size: 0.95em; }
+	header { margin: 20px auto; }
 	h1 { margin: 8px auto; }
-	hr { border: 0.5px solid #bbb; }
+	hr { border: 0.5px solid #bbb; margin-bottom: 30px; margin-left: -10px; margin-right: -10px; padding: auto 10px; }
 	li { margin: 0.5em auto; }
 	td { padding: 0 10px; }
-	@media screen and (max-width: 500px) {
-		td { display: block; }
-		header table { text-align: center; }
+	:target {
+        	display: block;
+        	position: relative;
+        	top: -20px; 
+        	visibility: hidden;
+	}
+	@media screen and (max-width: 600px) {
+		section img { float: left; padding-right: 20px; padding-bottom: 20px; }
+		section td { display: inline; margin-left: -10px; }
+		header td { display: block; padding: 0.5em 0; }
+		:target { top: -45px; }
 	}
 </style>
 </head>
@@ -37,19 +56,16 @@
 
 <header>
 
-<table>
-<tr>
-<td>
-    <img src="img/joe.png" width=250 alt="Joe Toscano" />
-</td>
-<td>
-    <h1>Joe Toscano</h1>
+<h1>Joe Toscano</h1>
+<table><tr>
+<td style="padding-left: 0; padding-right: 20px;">
     <address>
         Assistant Professor<br>
-	Department of Psychological and Brain Sciences<br>
+	Dept. of Psychological &amp; Brain Sciences<br>
 	Villanova University
-    	<br>
-    	<br>
+    </address>
+</td><td>
+    <address>
 	<a href="mailto:joseph.toscano@villanova.edu">joseph.toscano@villanova.edu</a><br>
 	Phone: <a href="tel:1-610-519-4755">610-519-4755</a><br>
 	Office: 344 Tolentine Hall<br>
@@ -58,41 +74,25 @@
 </td>
 </tr>
 </table>
-
-
-
 </header>
 
 
 <nav>
-    <a href="http://jtoscano.youcanbook.me"><strong>Schedule meeting</strong></a>
+    <a href="#">Home</a>
     <a href="#research">Research</a>
     <a href="#teaching">Teaching</a>
     <!--<a href="#prospective-students">Prospective Students</a>-->
     <a href="toscano-cv.pdf">CV<span style="font-size:0.67em">(updated Jan-18)</span></a>
+    <a href="http://jtoscano.youcanbook.me">Schedule meeting</a>
 </nav>
 
 
-<hr>
-
 <section>
-<table style="text-align: left; background: #d6ffce; padding: 15px; border: 2px solid #73916d;"><tr>
-
-<td>
-	<img src="img/brainlang2.jpg" width=150>
-</td>
-<td>
-	<strong>New neuroimaging paper on the time-course of speech processing is now out at <em>Brain &amp; Language</em>:</strong><br>
-	<br>
-	<a href="https://doi.org/10.1016/j.bandl.2018.06.006">Toscano JC, Anderson ND, Fabiani M, Gratton G, Garnsey SM (2018). The time-course of cortical responses to speech revealed by fast optical imaging. Brain and Language, 184, 32-42.</a>
-</td>
-</tr>
-</table>
 
 <h2>About</h2>
 
-<p>
-    Hi there. I'm an Assistant Professor of 
+<table><tr><td style="padding-left: 0;"><img src="img/joe.png" width=200></td>
+<td>Hi there. I'm an Assistant Professor of 
 	<a href="http://www1.villanova.edu/villanova/artsci/psychology.html">
     	Psychological and Brain Sciences</a> at 
     <a href="http://www.villanova.edu">Villanova University</a>, where I direct 
@@ -101,7 +101,8 @@
     and language processing, using a combination of computational, cognitive neuroscience, and behavioral techniques. I teach graduate and undergraduate
     courses in psychology, neuroscience, and cognitive science, including a
     laboratory course on speech perception for non-science majors. 
-</p>
+</td>
+</tr></table>
 
 <h3>Education and Academic Positions</h3>
 
@@ -149,14 +150,19 @@
     <a href="http://wraplab.co/"><strong>lab website</strong></a>.
 </p>
 
+<a id="pubs"></a>
 <h3>Selected Publications</h3>
 
 <p>Full list on <a href="http://wraplab.co/publications.html"><strong>lab website</strong></a> and Google Scholar <a href="https://scholar.google.com/citations?user=NJ2B29cAAAAJ&hl=en&oi=ao"><strong>profile</strong></a>. Talks/presentations on lab website.</p>
 <ol>
 
-<li>Tabachnick AR, Toscano JC (in press). Perceptual encoding in auditory brainstem responses: Effects of stimulus frequency. To appear in <i>Journal of Speech, Language, and Hearing Research.</i></li>
+<li>Pereira O, Gao YA, Toscano JC (in press). Perceptual encoding of natural speech sounds revealed by the N1 event-related potential response. To appear in <i>Auditory Perception &amp; Cognition</i>.</li>
+	
+<li>Gao YA, Toscano JC, Shih C, Tanner D (in press). Reassessing the electrophysiological evidence for categorical perception of Mandarin lexical tone: ERP evidence from native and na&iuml;ve non-native Mandarin listeners. To appear in <i>Attention, Perception, &amp; Psychophysics</i>.</li>
 
 <li>Toscano JC, Lansing C (in press). Age-Related changes in temporal and spectral cue weights in speech. To appear in <em>Language and Speech</em>. <a href="http://dx.doi.org/10.1177/0023830917737112"><strong>[pdf]</strong></a>
+
+<li>Tabachnick AR, Toscano JC (2018). Perceptual encoding in auditory brainstem responses: Effects of stimulus frequency. <i>Journal of Speech, Language, and Hearing Research, 61</i>, 2364-2375. <a href="https://dx.doi.org/10.1044/2018_JSLHR-H-17-0486"><strong>[pdf]</strong></a></li>
 
 <li>Toscano JC, Anderson ND, Fabiani M, Gratton G, Garnsey SM (2018). The time-course of cortical responses to speech revealed by fast optical imaging. <em>Brain and Language, 184</em>, 32-42. <a href="https://doi.org/10.1016/j.bandl.2018.06.006"><strong>[pdf]</strong></a></li>
 
@@ -271,47 +277,11 @@ convergence"
 	<li><strong><a href="http://wraplab.co/courses/psy8200">Perception</a></strong> (graduate, PSY 8200)
 </ul>
 
-
-<!--
-<a id="prospective-students"></a>
-<hr>
-
-<h2>Prospective Students</h2>
-
-<h3>Postdocs and grad students</h3>
-
-<p>If you are interested in doing postdoctoral work in the lab or applying to 
-    our graduate program, please email me.</p>
-
-<p>The Department of Psychological and Brain Sciences offers a 
-    <a href="https://www1.villanova.edu/villanova/artsci/psychology/AcademicPrograms/graduate.html">
-    research-based M.S. in Psychology</a>. Our graduate program is particularly
-    well-suited for students who would like to obtain additional research 
-    experience before starting their Ph.D. If you are a prospective student
-    applying to the M.S. program, please feel contact me to find out more about
-    working in the lab. Current Villanova graduate student? Students in the lab
-    are involved in a variety of projects. Contact me to find out more about
-    joining the lab (the sooner the better!). Information for prospective thesis
-    students is available on the Department Sharepoint site.</p>
-
-<h3>Undergraduates</h3> 
-
-<p>Our lab is always looking for good Psychology and Cognitive &amp; Behavioral 
-    Neuroscience majors (and other majors!) who want to learn more about
-    perception and language. Undergraduate research assistants are an integral 
-    part of our team and are involved with running participants, creating 
-    stimuli for experiments, and analyzing data. A number of students have also 
-    worked on their own research projects in the lab. If you are thinking about
-    applying to grad school, working in a lab will provide you with essential
-    research experience. <a href="http://wraplab.co/join.html">Click here to find 
-    out more about joining the lab.</a></p>
--->
-
 </section>
 
 <hr>
 <footer>
-	Last updated by J. Toscano, 06-Aug-2018
+	Last updated by J. Toscano, 11-Oct-2018
 </footer>
 
 </body>
