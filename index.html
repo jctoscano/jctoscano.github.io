@@ -8,6 +8,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+ $(function(){ 
+     var navMain = $(".navbar-collapse"); // avoid dependency on #id
+     // "a:not([data-toggle])" - to avoid issues caused
+     // when you have dropdown inside navbar
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+  </script>
 	<meta name="google-site-verification" content="0-yV-mRZ-3z7djYLoEsQSPYfJ1vCEkoSjwmirbVQaRQ" />
 	<style>
 		html {
@@ -37,7 +47,7 @@
         <a href="#teaching" class="nav-link text-dark font-weight-bold bg-light">Teaching</a>
       </li>
       <li class="nav-item">
-        <a href="toscano-cv.pdf" class="nav-link text-dark font-weight-bold bg-light">CV<span style="font-size:0.67em">(updated Jan-19)</span></a>
+        <a href="toscano-cv.pdf" class="nav-link text-dark font-weight-bold bg-light">CV</a>
       </li> 
       <li class="nav-item">
         <a href="http://jtoscano.youcanbook.me" class="nav-link text-dark font-weight-bold bg-light">Schedule meeting</a>
