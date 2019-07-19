@@ -3,142 +3,108 @@
 <head>
 	<title>Joe Toscano, Villanova University</title>
     	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<meta name="google-site-verification" content="0-yV-mRZ-3z7djYLoEsQSPYfJ1vCEkoSjwmirbVQaRQ" />
-<style>
-    	html {
-          line-height: 1.4em;
-          font-size: 0.9em;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-          font-weight: normal;
-          color: rgba(0, 0, 0 0.9);
-          max-width: 1000px; 
- 	  padding: 10px; 
-	  margin: auto;
- 	  background: #FFFFFF;
-	  overflow-x: hidden; 
-        }
-	h1, h2, h3, nav { color: #001F5B; text-transform: uppercase; font-weight: 600; line-height: 1.4em; }
-	nav {   
-		position: sticky;
-		position: -webkit-sticky;
-		top: 0; 
-		background: #FFFFFF; 
-		border-bottom: 1px solid #444; 
-		margin: 30px -20px;
-		padding: 5px 20px;
-		font-weight: 700;
-	}
-	nav a { display: inline-block; padding: 3px 4px 0; text-decoration: none; }
-	a:active, a:hover { color: red; }
-	footer { text-align: right; margin: auto auto 30px;}
-	address, nav, footer { font-size: 0.95em; }
-	header { margin: 20px auto; }
-	h1 { margin: 8px auto; }
-	hr { border: 0.5px solid #bbb; margin-bottom: 30px; margin-left: -10px; margin-right: -10px; padding: auto 10px; }
-	li { margin: 0.5em auto; }
-	td { padding: 0 10px; }
-	:target {
-        	display: block;
-        	position: relative;
-        	top: -20px; 
-        	visibility: hidden;
-	}
-	@media screen and (max-width: 600px) {
-		section img { float: left; padding-right: 20px; padding-bottom: 20px; }
-		section td { display: inline; margin-left: -10px; }
-		header td { display: block; padding: 0.5em 0; }
-		:target { top: -45px; }
-	}
-</style>
+	<style>
+		html {
+		  font-size: 0.9rem;
+		}
+	</style>
 </head>
 
 <body>
 
-<header>
+<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+  <!-- Brand -->
+  <a class="navbar-brand font-weight-bold text-primary" href="#">Joe Toscano</a>
 
-<h1>Joe Toscano</h1>
-<table><tr>
-<td style="padding-left: 0; padding-right: 20px;">
-    <address>
-        Assistant Professor<br>
-	Dept. of Psychological &amp; Brain Sciences<br>
-	Villanova University
-    </address>
-</td><td>
-    <address>
-	<a href="mailto:joseph.toscano@villanova.edu">joseph.toscano@villanova.edu</a><br>
-	Phone: <a href="tel:1-610-519-4755">610-519-4755</a><br>
-	Office: 344 Tolentine Hall<br>
-	Lab: 231 Tolentine Hall
-     </address>
-</td>
-</tr>
-</table>
-</header>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <!--<a href="#prospective-students">Prospective Students</a>-->
-    <a href="toscano-cv.pdf">CV<span style="font-size:0.67em">(updated Jan-19)</span></a>
-    <a href="http://jtoscano.youcanbook.me">Schedule meeting</a>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="#research" class="nav-link text-dark bg-light font-weight-bold">Research</a>
+      </li>
+      <li class="nav-item">
+        <a href="#teaching" class="nav-link text-dark font-weight-bold bg-light">Teaching</a>
+      </li>
+      <li class="nav-item">
+        <a href="toscano-cv.pdf" class="nav-link text-dark font-weight-bold bg-light">CV<span style="font-size:0.67em">(updated Jan-19)</span></a>
+      </li> 
+      <li class="nav-item">
+        <a href="http://jtoscano.youcanbook.me" class="nav-link text-dark font-weight-bold bg-light">Schedule meeting</a>
+      </li> 
+    </ul>
+  </div> 
 </nav>
 
+<br>
 
-<section>
+<div class="container" style="max-width:992px;">
 
-<h2>About</h2>
+	
 
-<table><tr><td style="padding-left: 0;"><img src="img/joe.png" width=200></td>
-<td>Hi there. I'm an Assistant Professor of 
-	<a href="http://www1.villanova.edu/villanova/artsci/psychology.html">
-    	Psychological and Brain Sciences</a> at 
-    <a href="http://www.villanova.edu">Villanova University</a>, where I direct 
-    the <a href="http://www.wraplab.co/">Word Recognition and Auditory
-    Perception (WRAP) Lab</a>. Our group studies speech perception, hearing, 
-    and language processing, using a combination of computational, cognitive neuroscience, and behavioral techniques. I teach graduate and undergraduate
-    courses in psychology, neuroscience, and cognitive science, including a
-    laboratory course on speech perception for non-science majors. 
-</td>
-</tr></table>
+		<img class="float-sm-none float-md-right float-lg-right float-xl-right mx-sm-auto rounded mb-md-3 ml-md-3" style="display:block; width:200px;" src="img/joe.png">
 
-<h3>Education and Academic Positions</h3>
+		<div class="float-sm-none float-md-left float-lg-left float-xl-left mx-auto text-sm-center text-md-left text-lg-left text-xl-left" style="display:block; width:500px;">
+		<h2>Joe&nbsp;Toscano</h2>
+		<p>
+		Assistant Professor<br>
+		Dept. of Psychological &amp; Brain Sciences<br>
+		Villanova University
+		</p>
+		</div>
+		<p style="clear: left;">
+		Hi there. I'm an Assistant Professor of <a href="http://www1.villanova.edu/villanova/artsci/psychology.html">Psychological and Brain Sciences</a> at <a href="http://www.villanova.edu">Villanova University</a>, where I direct the <a href="http://www.wraplab.co/">Word Recognition and Auditory Perception (WRAP) Lab</a>. Our group studies speech perception, hearing, and language processing, using a combination of computational, cognitive neuroscience, and behavioral techniques. I teach graduate and undergraduate courses in psychology, neuroscience, and cognitive science, including a laboratory course on speech perception for non-science majors. 
+		</p>
+	
+	<h4>Contact Info:</h4>
+	<address class="ml-5">
+		Email: <a href="mailto:joseph.toscano@villanova.edu">joseph.toscano@villanova.edu</a><br>
+		Phone: <a href="tel:1-610-519-4755">610-519-4755</a><br>
+		Office: 344 Tolentine Hall<br>
+		Lab: 231 Tolentine Hall
+	</address>
 
-<ul>
-	<li><strong>Assistant Professor (2014-present)</strong>, Dept. of Psychological 
-		and Brain Sciences, Villanova University (Affiliations: Cognitive
-		Science Program; Cognitive and Behavioral Neuroscience Program; 
-		Word Recognition and Auditory Perception Laboratory)
-	<!--<li> -->
-	<li><strong>Postdoctoral Fellow (2011-2014)</strong>, Beckman Institute for Advanced
-		Science and Technology, University of Illinois at Urbana-Champaign
-		(Collaborators: Susan Garnsey, Jont Allen, Duane Watson, Sarah 
-		Brown-Schmidt, Charissa Lansing, Monica Fabiani, Gabriele Gratton)
-	<li><strong>Ph.D., Psychology&mdash;Cognition and Perception (2005-2011)</strong>,
-		University of Iowa (Advisor: Bob McMurray)
-	<li><strong>B.S., Brain and Cognitive Sciences (2001-2005)</strong>, University of
-		Rochester (Advisor: Mike Tanenhaus)
-</ul>
+	<h4>Education and Academic Positions</h4>
 
-<a id="research"></a>
-<hr>
-<h2>Research</h2>
+	<ul class="w3-ul">
+		<li><strong>Assistant Professor (2014-present)</strong>, Dept. of Psychological 
+			and Brain Sciences, Villanova University (Affiliations: Cognitive
+			Science Program; Cognitive and Behavioral Neuroscience Program; 
+			Word Recognition and Auditory Perception Laboratory)
+		<li><strong>Postdoctoral Fellow (2011-2014)</strong>, Beckman Institute for Advanced
+			Science and Technology, University of Illinois at Urbana-Champaign
+			(Collaborators: Susan Garnsey, Jont Allen, Duane Watson, Sarah 
+			Brown-Schmidt, Charissa Lansing, Monica Fabiani, Gabriele Gratton)
+		<li><strong>Ph.D., Psychology&mdash;Cognition and Perception (2005-2011)</strong>,
+			University of Iowa (Advisor: Bob McMurray)
+		<li><strong>B.S., Brain and Cognitive Sciences (2001-2005)</strong>, University of
+			Rochester (Advisor: Mike Tanenhaus)
+	</ul>
 
-<p align="center">
-<img src="img/research.png" alt="Research" style="max-width: 900px; width: 100%;">
-</p>
+	<br>
+	<hr>
+	<a id="research" style="display: block; position: relative; top: -64px; visibility: hidden;"></a>
+	<h3>Research</h3>
 
-<p>My research focuses on questions about <strong>speech and language processing</strong>:</p>
-<ul class="nospace">
-	<li>How do human listeners recognize speech accurately despite variablity 
-		in the acoustic signal? 
-	<li>How does this ability emerge over development, and how malleable is it in adulthood? 
-	<li>How can we develop speech-based tests to measure hearing loss using behavioral
-		and/or neural responses?
-</ul>
+	<!--<img src="img/research.png" style="max-width:100%">-->
+	<p>My research focuses on questions about <strong>speech and language processing</strong>:</p>
+	<ul>
+		<li>How do human listeners recognize speech accurately despite variablity 
+			in the acoustic signal? 
+		<li>How does this ability emerge over development, and how malleable is it in adulthood? 
+		<li>How can we develop speech-based tests to measure hearing loss using behavioral
+			and/or neural responses?
+	</ul>
 
 <p>
     To answer these questions, we use techniques that allow us to study spoken
@@ -152,12 +118,13 @@
 </p>
 
 <a id="pubs"></a>
-<h3>Selected Publications</h3>
+<h4>Recent Publications</h4>
 
 <p>Full list on <a href="http://wraplab.co/publications.html"><strong>lab website</strong></a> and Google Scholar <a href="https://scholar.google.com/citations?user=NJ2B29cAAAAJ&hl=en&oi=ao"><strong>profile</strong></a>. Talks/presentations on lab website.</p>
-<ol>
 
-<li>Getz LM, Toscano JC (in press). Electrophysiological evidence for top-down lexical influences on early speech perception. To appear in <i>Psychological Science.</i>
+<ul class="w3-ul">
+
+<li>Getz LM, Toscano JC (2019). Electrophysiological evidence for top-down lexical influences on early speech perception. <em>Psychological Science, 30</em>, 830-841. <a href="https://doi.org/10.1177/0956797619841813"><strong>[pdf]</strong></a></li>
 
 <li>Toscano JC, Lansing C (2019). Age-Related changes in temporal and spectral cue weights in speech. <em>Language and Speech, 62</em>, 61-79. <a href="http://dx.doi.org/10.1177/0023830917737112"><strong>[pdf]</strong></a></li>
 
@@ -179,6 +146,7 @@
 
 <li>Toscano JC, Bux&oacute;-Lugo A, Watson DG (2015). Using game-based approaches to increase level of engagement in research and education. In S. Dikkers (Ed.), <em>TeacherCraft: How Teachers Learn to Use Minecraft in Their Classrooms</em>. Pittsburgh: ETC Press. <a href="http://press.etc.cmu.edu/content/teachercraft-how-teachers-learn-use-minecraft-their-classrooms"><strong>[pdf]</strong></a>
 
+<!--
 <li>Toscano JC, Allen JB (2014). Across and within consonant errors for isolated syllables in noise. <em>Journal of Speech, Language, and Hearing Research, 57</em>, 2293-2307. <span><a href="http://dx.doi.org/10.1044/2014_JSLHR-H-13-0244"><strong>[pdf]</strong></a> <a href="http://www.ncbi.nlm.nih.gov/pubmed/25087617"><strong>[PubMed]</strong></a></span>
 
 <li>Toscano JC, Anderson ND, McMurray B (2013). Reconsidering the role of temporal order in spoken word recognition. <em>Psychonomic Bulletin and Review, 20.</em> 981-987. <span><a href="http://dx.doi.org/10.3758/s13423-013-0417-0"><strong>[pdf]</strong></a> <a href="https://link.springer.com/article/10.3758%2Fs13423-013-0417-0#SupplementaryMaterial"><strong>[Supplementary Material]</strong></a> <a href="http://www.ncbi.nlm.nih.gov/pubmed/23456328"><strong>[PubMed]</strong></a></span>
@@ -200,12 +168,13 @@
 <li>Toscano JC, McMurray B (2008). Using the distributional statistics of speech sounds for weighting and integrating acoustic cues. In B.C. Love, K. McRae, &amp; V.M. Sloutsky (Eds.), <em>Proceedings of the 30th Annual Conference of the Cognitive Science Society</em> (pp. 433-438). Austin, TX: Cognitive Science Society. Winner of the Computational Modeling Prize in Perception and Action. <a href="http://csjarchive.cogsci.rpi.edu/proceedings/2008/pdfs/p433.pdf"><strong>[pdf]</strong></a> 
 
 <li>Toscano JC, Perry LK, Mueller KL, Bean AF, Galle ME, Samuelson LK (2008). Language as shaped by the brain; the brain as shaped by development. Commentary on Christiansen &amp; Chater, "Language as shaped by the brain", <em>Behavioral and Brain Sciences, 31</em>, 535-536. <a href="http://dx.doi.org/10.1017/S0140525X08005268"><strong>[pdf]</strong></a>
+-->
 
-</ol>
+</ul>
 
-<h3>Resources</h3>
+<h4>Resources</h4>
 
-<ul>
+<ul class="w3-ul">
 	
 	<li><a href="https://sites.google.com/site/praatscripts/"><strong>Praat
 	Script Archives</strong></a>: Archive of links to Praat scripts 
@@ -221,45 +190,50 @@
 
 </ul>
 
-
-<a id="teaching"></a>
+<br>
 <hr>
+<a id="teaching" style="display: block; position: relative; top: -64px; visibility: hidden;"></a>
 
-<h2>Teaching and Student Training</h2>
+<h3>Teaching</h3>
 
-<h3>Former Graduate Students</h3>
+<!--<h4>Former Graduate Students</h4>-->
 
-<p>I've had the privilege of working with a number of outstanding graduate
-    students in my lab at Villanova. Check out the complete list of our lab
-    alumni <a href="http://wraplab.co/alumni.html">here</a>. The following students completed their <a href="https://search.proquest.com/search/1412278">M.S. theses</a> in my lab:</p>
-
-<ol>
-    <li><strong>Daniel Cordero</strong> (M.S., 2018, Software Engineering), "Applying neural nets to EEG data for hearing loss detection" (co-supervised with <a href="http://www.csc.villanova.edu/~ekim/">Dr. Edward Kim</a>)</li>
-    <li><strong>Emma Folk</strong> (M.S., 2017), "Parallel vs. serial processing in language
-comprehension"
-    <li><strong>Benjamin Falandays</strong> (M.S., 2017), "How long can listeners maintain
-gradient acoustic information?"
-	<li><strong>David Saltzman</strong> (M.S., 2016), "The role of the speech envelope in
-speaking rate compensation"
-	<li><strong>Tifani Biro</strong> (M.S., 2016), "Enhancing tools for measuring phonetic
-convergence"
-</ol>
-
-<p>Master's students who completed substantial research projects in my lab other than their thesis:</p>
+<p>I've had the privilege of working with a number of outstanding
+    students in my lab. Check out the complete list of our lab
+    alumni <a href="http://wraplab.co/alumni.html">here</a>. The following students completed their <a href="https://search.proquest.com/search/1412278">M.S. theses</a> in our lab:</p>
 
 <ol>
-	<li><strong>Alexandra Tabachnick</strong> (M.S., 2016), "Frequency sensitivity of auditory brainstem responses"
-	<li><strong>Olivia Pereira</strong> (M.S., 2016), "The N1 event-related potential component as an index of speech sound encoding for multiple phonetic contrasts"
-	<li><strong>Taylor Curley</strong> (M.S., 2015), "Statistical learning of English vowel categories"
+    <li><strong>Abigail Benecke</strong> (M.S., 2018), "Redundancy and variability in speech: Listeners' use of token-Level phonetic cues" 
+	<a href="https://search.proquest.com/docview/2177015240/DA52644AAC342C7PQ/1?accountid=14853"><strong>[pdf]</strong></a>
+    <li><strong>Daniel Cordero</strong> (M.S., 2018, Software Engineering), "Applying neural nets to EEG data for hearing loss detection" (co-supervised with <a href="http://www.csc.villanova.edu/~ekim/">Dr. Edward Kim</a>) &nbsp;
+	<a href="https://search.proquest.com/docview/2077098710/DA52644AAC342C7PQ/2?accountid=14853"><strong>[pdf]</strong></a>
+    <li><strong>Emma Folk</strong> (M.S., 2017), "Parallel vs. serial processing in language comprehension"
+	<a href="https://search.proquest.com/docview/1970086920/DA52644AAC342C7PQ/3?accountid=14853"><strong>[pdf]</strong></a>
+    <li><strong>Benjamin Falandays</strong> (M.S., 2017), "How long can listeners maintain gradient acoustic information?"
+	<a href="https://search.proquest.com/docview/1903643053/DA52644AAC342C7PQ/4?accountid=14853"><strong>[pdf]</strong></a>
+    <li><strong>David Saltzman</strong> (M.S., 2016), "The role of the speech envelope in speaking rate compensation"
+	<a href="https://search.proquest.com/docview/1866327068/DA52644AAC342C7PQ/5?accountid=14853"><strong>[pdf]</strong></a>
+    <li><strong>Tifani Biro</strong> (M.S., 2016), "Enhancing tools for measuring phonetic convergence"
+	<a href="https://search.proquest.com/docview/1865907726/DA52644AAC342C7PQ/6?accountid=14853"><strong>[pdf]</strong></a>
 </ol>
 
-<h3>Prospective Students</h3>
+<p>Master's students who completed substantial research projects or published work from our lab other than their thesis:</p>
+
+<ol>
+	<li><strong>Courtney Thomas</strong>, "Cortical measures of speech sound encoding and effects of hearing loss"
+	<li><strong>Elke Nordeen</strong> and <strong>Sarah Vrabic</strong>, "Modeling the development of audiovisual cue integration in speech perception" <a href="http://dx.doi.org/10.3390/brainsci7030032"><strong>[pdf]</strong></a>
+	<li><strong>Alexandra Tabachnick</strong>, "Perceptual encoding in auditory brainstem responses: Effects of stimulus frequency" <a href="https://dx.doi.org/10.1044/2018_JSLHR-H-17-0486"><strong>[pdf]</strong></a>
+	<li><strong>Olivia Pereira</strong>, "Perceptual encoding of natural speech sounds revealed by the N1 event-related potential response" <a href="https://doi.org/10.1080/25742442.2018.1545106"><strong>[pdf]</strong></a>
+	<li><strong>Taylor Curley</strong>, "Statistical learning of English vowel categories"
+</ol>
+
+<h4>Prospective Students</h4>
 
 <p>Interested in doing postdoctoral work in the lab or applying to our department's <a href="https://www1.villanova.edu/villanova/artsci/psychology/AcademicPrograms/graduate.html">M.S. program</a>? Send me an email to find out more!</p>
 
 <p>Current Villanova undergraduate? Our lab is always looking for good Psychology and Cognitive &amp; Behavioral Neuroscience majors (and other majors!) who want to learn more about perception and language. <a href="http://wraplab.co/join.html">Click here</a> to find out more about undergraduate research positions in the lab.</p>
 
-<h3>Courses</h3>
+<h4>Courses</h4>
 
 <p>I teach courses in the Psychology, CBN, and Cognitive Science programs at Villanova. I also teach a Mendel Science
     Experience (MSE) course in the College of Liberal Arts and Sciences called 
@@ -280,12 +254,15 @@ convergence"
 	<li><strong><a href="http://wraplab.co/courses/psy8200">Perception</a></strong> (graduate, PSY 8200)
 </ul>
 
-</section>
-
 <hr>
-<footer>
-	Last updated by J. Toscano, 11-Oct-2018
+<footer class="small float-right">
+	Last updated 25-Jun-2019
+	<br><br>
 </footer>
+
+<!-- End Page Container -->
+</div>
+
 
 </body>
 </html>
